@@ -1,3 +1,8 @@
+;http://www.gigamonkeys.com/book/practical-parsing-binary-files.html
+;http://golang-challenge.com/go-challenge1/
+;http://www.lispworks.com/documentation/lw51/CLHS/Body/f_rd_seq.htm
+;http://www.lispworks.com/documentation/lw60/CLHS/Body/f_rd_by.htm
+
 (with-open-file (s "/Users/jite/code/golang-challenge-1/fixtures/pattern_1.splice" :element-type 'unsigned-byte)
   (format t "~S ~S" (read-byte s) (read-byte s nil 'eof)))
 
